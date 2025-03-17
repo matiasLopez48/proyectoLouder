@@ -1,0 +1,334 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.titulo {
+  width: 100%;
+  padding-bottom: 1%;
+  padding-left: 1%;
+  color: white;
+}
+
+body {
+  background-color: #082032;
+  padding-top: 10px;
+}
+
+.customBg {
+  background-color: #082032;
+  padding-top: 10px;
+}
+
+header {
+  background-color: #082032;
+  padding-bottom: 15px;
+}
+
+.headerGrid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr;
+  background-color: #2c394b;
+  list-style-type: none;
+  align-items: center;
+  justify-items: center;
+}
+
+.logoPrincipal {
+  width: 50%;
+  height: auto;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 50%;
+}
+
+.botonNavegador {
+  background-color: #334756;
+  font-size: 100%;
+  padding: 10px 25px;
+  width: 100%;
+}
+
+.botonNavegador:hover {
+  background-color: #6e6e6e;
+  border-color: #6e6e6e;
+}
+
+@media (max-width: 767.98px) {
+  h1 {
+    font-size: small;
+  }
+
+  h2 {
+    font-size: x-small;
+  }
+
+  .botonNavegador {
+    padding: 2px 17px;
+  }
+
+  .boton {
+    font-size: x-small;
+  }
+
+  .contactoLouderFooter {
+    font-size: xx-small;
+  }
+}
+
+.customCarousel {
+  width: 75%;
+  justify-self: center;
+}
+
+.playlists {
+  background-color: #2c394b;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  padding: 10px 10px;
+  padding-bottom: 15px;
+  color: whitesmoke;
+  border: 1px solid white;
+}
+
+.boton {
+  text-decoration: none;
+  color: whitesmoke;
+  transition: background-color 0.3s, border-color 0.3s;
+  border: 1px solid white;
+  display: inline-block;
+  text-align: center;
+  align-content: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-radius: 0.3rem;
+  box-shadow: 4px 4px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.botonVerde {
+  background-color: rgb(30, 215, 96);
+  width: 98%;
+  height: 2em;
+}
+
+.botonVerde:hover {
+  background-color: rgb(30, 108, 57);
+  border-color: rgb(30, 108, 57);
+}
+
+.botonRosa {
+  background-color: rgb(221, 42, 123);
+  width: 98%;
+  height: 2em;
+}
+
+.botonRosa:hover {
+  background-color: rgb(141, 27, 78);
+  border-color: rgb(141, 27, 78);
+}
+
+.footerGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  justify-items: center;
+  align-items: normal;
+  background-color: #2c394b;
+  color: whitesmoke;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.fotoDePerfil {
+  width: 45%;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  box-shadow: 4px 4px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.contactoLouderFooter {
+  background-color: #334756;
+  padding: 10% 10%;
+  border: white solid 1px;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.contactoLouderFooter img {
+  width: 7%;
+  height: auto;
+  margin-right: 2px;
+}
+
+.contactoIndFooter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.contactoLouderFooter a {
+  display: block;
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+.Copyright {
+  font-size: x-small;
+  padding-top: 40%;
+}
+
+.presentacionesIndividuales {
+  justify-content: center;
+  margin: 10px;
+  flex-wrap: wrap;
+  display: flex;
+  background-color: #2c394b;
+  padding: 10px 5px;
+  border: 1px solid black;
+}
+
+.presentacionesIndividuales img {
+  display: flex;
+  width: 50%;
+  height: auto;
+  padding-bottom: 10px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.soloDJ img {
+  display: flex;
+  width: 98%;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 2rem;
+}
+
+.soloDJ p {
+  display: flex;
+  box-sizing: border-box;
+  margin-right: 10px;
+  padding-bottom: 10px;
+  text-align: justify;
+  color: whitesmoke;
+}
+.soloDJ {
+  flex: 1 1 300px;
+  box-sizing: border-box;
+  margin-bottom: 40px;
+  padding-left: 10px;
+  padding-top: 5px;
+  background-color: #334756;
+  margin-left: 5px;
+  border: black solid 1px;
+}
+
+.djJuntos {
+  display: flexbox;
+  justify-items: center;
+  color: whitesmoke;
+}
+
+.djJuntos img {
+  width: 90%;
+  display: block;
+  border-radius: 2rem;
+}
+
+.playlistsGrid {
+  margin: 1%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  gap: 0.2em;
+}
+
+.item {
+  background-color: #2c394b;
+  text-align: center;
+  border: 1px solid black;
+  color: whitesmoke;
+}
+
+.playlistsGrid video {
+  padding: 0.05em 0.05em;
+  width: 95%;
+  height: auto;
+}
+
+.calendario {
+  display: inline-flex;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
+  background-color: #334756;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.calendarioBotones {
+  display: flex;
+  justify-content: space-between;
+}
+
+.fecha {
+  flex: none;
+  width: 250px;
+  height: 300px;
+  padding: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: #425c6f;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+}
+
+.dia {
+  margin-bottom: 20px;
+}
+
+.eventoDelDia {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: #507087;
+  color: whitesmoke;
+}
+
+.formulario {
+  padding: 20px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #2c394b;
+  margin: 10px;
+  border: 1px solid black;
+  color: whitesmoke;
+}
+
+textarea {
+  width: 98%;
+  height: 3rem;
+}
+
+input {
+  width: 21%;
+  margin-bottom: 10px;
+}

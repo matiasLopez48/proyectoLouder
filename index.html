@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inicio</title>
+    <link rel="stylesheet" href="./css/style.css" class="css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css
+    "
+    />
+  </head>
+
+  <body class="customBg">
+    <header>
+      <nav>
+        <ul class="headerGrid">
+          <li>
+            <img src="./assets/logo1.jpg" alt="louder" class="logoPrincipal" />
+          </li>
+          <li><a href="#" class="boton botonNavegador">Inicio</a></li>
+          <li>
+            <a href="./views/quienesSomos.html" class="boton botonNavegador"
+              >Quienes somos</a
+            >
+          </li>
+          <li>
+            <a href="./views/proximasFechas.html" class="boton botonNavegador"
+              >Proximas Fechas</a
+            >
+          </li>
+          <li>
+            <a href="./views/contactanos.html" class="boton botonNavegador"
+              >Contactanos</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <h1 class="titulo">Eventos Recientes</h1>
+    <div id="carouselExampleCaptions" class="carousel slide customCarousel">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <video
+            src="./assets/eventoMrJones.mp4"
+            class="d-block w-100"
+            alt="Louder Mr Jones"
+            autoplay
+          ></video>
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Mr Jones</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+              in atque, fuga sit impedit molestias deleniti eum neque quas
+              laboriosam exercitationem omnis natus. Beatae quis consequuntur
+              nemo, modi odit qui! Eaque autem in nobis odio quos dolore sunt
+              ratione iste? A ratione obcaecati unde corrupti totam labore
+              soluta porro odio eaque amet vero, quo accusamus? Eaque laudantium
+              fugit aperiam quibusdam.
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <video
+            src="./assets/eventoPalacioAlsina.mp4"
+            class="d-block w-100"
+            alt="Louder Palacio Alsina"
+            autoplay
+          ></video>
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Palacio Alsina</h5>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Blanditiis laborum mollitia, consectetur perferendis debitis et
+              error sint ipsum enim, consequatur id facere quos nihil iure illum
+              ipsa distinctio eos. Pariatur? Quod excepturi itaque delectus
+              quasi, possimus expedita culpa voluptas accusantium ut ex
+              cupiditate fugit esse repellat dolores odio cum impedit cumque
+              minima velit doloribus consequatur adipisci repellendus dicta
+              perferendis! Itaque!
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <video
+            src="./assets/eventoNebulosa.mp4"
+            class="d-block w-100"
+            alt="Louder Palacio Alsina"
+            autoplay
+          ></video>
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Palacio Alsina</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam in
+              sapiente maxime ipsum doloribus quia consequatur esse impedit
+              libero ipsam provident neque odit iusto obcaecati, nobis quidem
+              sed nam facilis! Nesciunt ipsum quos nobis mollitia tempora
+              doloribus atque magni? Eius quasi quia nihil eveniet totam illum
+              maiores, impedit facilis doloribus aspernatur cupiditate quis
+              delectus cum fugiat molestias nobis, accusantium libero.
+            </p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <section class="playlists">
+      <h2>Nuestras playlist</h2>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure,
+        veritatis ipsa! Repellat itaque rem quae sapiente obcaecati at, facere
+        minima a cumque quod numquam? Illum consequuntur pariatur labore
+        voluptate autem.
+      </p>
+      <a href="./views/nuestrasPlaylist.html" class="boton botonVerde"
+        >¡Quiero verlas!</a
+      >
+    </section>
+    <footer>
+      <section class="footerGrid">
+        <div class="contactoLouderFooter">
+          <!-- Datos de contacto alineados a la izquierda -->
+          <h3>Contacto</h3>
+          <a href="https://wa.me/1130694035" target="_blank"
+            ><img src="./assets/whatsappIcon.svg" alt="whatsapp" />+54 9 11
+            3069-4035</a
+          >
+          <a href="mailto:santiagodemartin@gmail.com" target="_blank"
+            ><img
+              src="./assets/email.svg"
+              alt="mail"
+            />santiagodemartin@gmail.com</a
+          >
+          <p class="Copyright">Copyright 2025 Matias López</p>
+        </div>
+        <div class="contactoIndFooter">
+          <!-- Contacto de Santi De Martin-->
+          <img
+            src="./assets/santidemartinPerfil.jpg"
+            alt="santidemartin"
+            class="fotoDePerfil"
+          />
+          <a
+            href="https://www.instagram.com/santidemartin?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+            class="boton botonRosa"
+            target="_blank"
+            >Seguime</a
+          >
+          <a
+            href="https://wa.me/113596-6346"
+            class="boton botonVerde"
+            target="_blank"
+            >Mensajeame</a
+          >
+        </div>
+        <div class="contactoIndFooter">
+          <!-- Contacto de Maxi Paz-->
+          <img
+            src="./assets/maxipazPerfil.jpg"
+            alt="maxipaz"
+            class="fotoDePerfil"
+          />
+          <a
+            href="https://www.instagram.com/_maxipaz_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+            class="boton botonRosa"
+            target="_blank"
+            >Seguime</a
+          >
+          <a
+            href="https://wa.me/113069-4035"
+            class="boton botonVerde"
+            target="_blank"
+            >Mensajeame</a
+          >
+        </div>
+        <div class="contactoIndFooter">
+          <img src="./assets/logo1.jpg" alt="louder" class="fotoDePerfil" />
+          <!-- Contacto de Louder-->
+          <a
+            href="https://www.instagram.com/louder.ba?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+            class="boton botonRosa"
+            target="_blank"
+            >Seguinos</a
+          >
+        </div>
+      </section>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js
+    "></script>
+  </body>
+</html>
