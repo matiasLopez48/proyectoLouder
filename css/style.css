@@ -243,25 +243,12 @@ header {
   border-radius: 2rem;
 }
 
-.playlistsGrid {
-  margin: 1%;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 1fr;
-  gap: 0.2em;
-}
-
-.item {
-  background-color: #2c394b;
-  text-align: center;
-  border: 1px solid black;
-  color: whitesmoke;
-}
-
-.playlistsGrid video {
-  padding: 0.05em 0.05em;
-  width: 95%;
-  height: auto;
+div.card.cardCustom {
+  width: 17rem;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  background-color: #334756;
+  display: inline-block;
 }
 
 .calendario {
