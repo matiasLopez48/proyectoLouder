@@ -2,23 +2,17 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 .titulo {
   width: 100%;
   padding-bottom: 1%;
   padding-left: 1%;
-  color: white;
+  color: whitesmoke;
 }
 
-body {
-  background-color: #082032;
-  padding-top: 10px;
-}
-
-.customBg {
+body, .customBg {
   background-color: #082032;
   padding-top: 10px;
 }
@@ -63,24 +57,19 @@ header {
   h1 {
     font-size: small;
   }
-
   h2 {
     font-size: x-small;
   }
-
   .botonNavegador {
     padding: 2px 17px;
   }
-
-  .boton {
+  .boton, .botonVerde, .botonRosa {
     font-size: x-small;
   }
-
   .contactoLouderFooter {
     font-size: xx-small;
   }
 }
-
 .customCarousel {
   width: 75%;
   justify-self: center;
@@ -91,13 +80,12 @@ header {
   margin-left: 10px;
   margin-bottom: 10px;
   margin-right: 10px;
-  padding: 10px 10px;
-  padding-bottom: 15px;
+  padding: 10px 15px;
   color: whitesmoke;
   border: 1px solid white;
 }
 
-.boton {
+.boton, .botonVerde, .botonRosa {
   text-decoration: none;
   color: whitesmoke;
   transition: background-color 0.3s, border-color 0.3s;
@@ -111,17 +99,6 @@ header {
   box-shadow: 4px 4px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.botonVerde {
-  background-color: rgb(30, 215, 96);
-  width: 98%;
-  height: 2em;
-}
-
-.botonVerde:hover {
-  background-color: rgb(30, 108, 57);
-  border-color: rgb(30, 108, 57);
-}
-
 .botonRosa {
   background-color: rgb(221, 42, 123);
   width: 98%;
@@ -131,6 +108,17 @@ header {
 .botonRosa:hover {
   background-color: rgb(141, 27, 78);
   border-color: rgb(141, 27, 78);
+}
+
+.botonVerde {
+  background-color: rgb(30, 108, 57);
+  width: 98%;
+  height: 2em;
+}
+
+.botonVerde:hover {
+  background-color: rgb(30, 108, 57);
+  border-color: rgb(30, 108, 57);
 }
 
 .footerGrid {
@@ -220,6 +208,7 @@ header {
   text-align: justify;
   color: whitesmoke;
 }
+
 .soloDJ {
   flex: 1 1 300px;
   box-sizing: border-box;
@@ -299,11 +288,13 @@ div.card.cardCustom {
   color: whitesmoke;
 }
 
-.formCustom{
-  color:whitesmoke;
+.formCustom {
+  color: whitesmoke;
   margin: 1em 1em;
   padding: 1em 1em;
-  background-color:#425c6f;
+  background-color: #425c6f;
   border-radius: 5px;
   border: 1px solid white;
 }
+
+/*# sourceMappingURL=style.css.map */
