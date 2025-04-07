@@ -28,22 +28,25 @@ body {
 }
 
 header {
-  background-color: $colorPrincipal;
+  background-color: $colorSecundario;
   padding-bottom: 15px;
+  border: white 1px solid;
 }
 
-.headerGrid {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: 1fr;
-  background-color: $colorSecundario;
-  list-style-type: none;
+.contenedorFlex{
+  display: flex;
   align-items: center;
-  justify-items: center;
+  justify-content: space-evenly;
+}
+
+nav{
+  display: flex;
+  gap: 15px; 
 }
 
 .logoPrincipal {
-  width: 50%;
+  display: inline-block;
+  width: 10%;
   height: auto;
   margin-left: 10px;
   margin-top: 10px;
@@ -56,11 +59,20 @@ header {
   border-color: $color;
 }
 
+@mixin estiloBoton($color, $ancho, $alto) {
+  background-color: $color;
+  width: $ancho;
+  height: $alto;
+}
+
 .botonNavegador {
   background-color: $colorTerciario;
   font-size: 100%;
   padding: 10px 25px;
   width: 100%;
+  border: white 1px solid;
+  color: $colorTexto;
+  @include estiloBoton($colorTerciario, 10em, 100%);
 }
 
 .botonNavegador:hover {
@@ -76,6 +88,10 @@ header {
     font-size: x-small;
   }
 
+  p{
+    font-size: xx-small;
+  }
+
   .botonNavegador {
     padding: 2px 17px;
   }
@@ -89,7 +105,7 @@ header {
   }
 }
 
-.video-container{
+.video-container {
   height: 100%;
 }
 
@@ -101,12 +117,6 @@ header {
   padding: 10px 15px;
   color: $colorTexto;
   border: 1px solid white;
-}
-
-@mixin estiloBoton($color, $ancho, $alto) {
-  background-color: $color;
-  width: $ancho;
-  height: $alto;
 }
 
 .boton {

@@ -16,31 +16,58 @@
 
   <body class="customBg">
     <header>
-      <nav>
-        <ul class="headerGrid">
-          <li>
-            <img src="../assets/logo1.jpg" alt="louder" class="logoPrincipal" />
-          </li>
-          <li>
-            <a href="../index.html" class="boton botonNavegador">Inicio</a>
-          </li>
-          <li>
-            <a href="./quienesSomos.html" class="boton botonNavegador"
-              >Quienes somos</a
+      <div class="contenedorFlex">
+        <img src="../assets/logo1.jpg" alt="logo louder" class="logoPrincipal" />
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="#"></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
             >
-          </li>
-          <li>
-            <a href="./proximasFechas.html" class="boton botonNavegador"
-              >Proximas Fechas</a
-            >
-          </li>
-          <li>
-            <a href="./contactanos.html" class="boton botonNavegador"
-              >Contactanos</a
-            >
-          </li>
-        </ul>
-      </nav>
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a
+                    class="nav-link botonNavegador"
+                    aria-current="page"
+                    href="../index.html"
+                    >Inicio</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link botonNavegador"
+                    href="../views/quienesSomos.html"
+                    >Quienes Somos</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link botonNavegador"
+                    href="../views/proximasFechas.html"
+                    >Proximas fechas</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link botonNavegador"
+                    href="../views/contactanos.html"
+                    >Contactanos</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
     </header>
     <h1 class="titulo">Nuestras Playlist</h1>
     <div class="card cardCustom">
