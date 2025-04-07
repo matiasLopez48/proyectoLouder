@@ -31,27 +31,20 @@ header {
   background-color: $colorSecundario;
   padding-bottom: 15px;
   border: white 1px solid;
-}
-
-.contenedorFlex{
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-}
-
-nav{
-  display: flex;
-  gap: 15px; 
-}
-
-.logoPrincipal {
-  display: inline-block;
-  width: 10%;
-  height: auto;
-  margin-left: 10px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  border-radius: 50%;
+  .contenedorFlex {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .logoPrincipal {
+    display: inline-block;
+    width: 10%;
+    height: auto;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+  }
 }
 
 @mixin sombreado($color) {
@@ -88,7 +81,7 @@ nav{
     font-size: x-small;
   }
 
-  p{
+  p {
     font-size: xx-small;
   }
 
@@ -158,48 +151,42 @@ footer {
   color: $colorTexto;
   padding-top: 10px;
   padding-left: 10px;
-}
-
-.fotoDePerfil {
-  width: 45%;
-  height: auto;
-  border-radius: 50%;
-  margin-bottom: 10px;
-  box-shadow: 4px 4px 2px 1px rgba(0, 0, 0, 0.2);
-}
-
-.contactoLouderFooter {
-  background-color: $colorTerciario;
-  padding: 1% 1%;
-  border: white solid 1px;
-  border-radius: 1rem;
-  display: flex;
-  flex-direction: column;
-  margin-right: 10px;
-}
-
-.contactoLouderFooter img {
-  width: 2%;
-  height: auto;
-  margin-right: 5px;
-}
-
-.contactoIndFooter {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 10px;
-}
-
-.contactoLouderFooter a {
-  display: block;
-  color: $colorTexto;
-  text-decoration: none;
-}
-
-.Copyright {
-  font-size: x-small;
-  padding-top: 2%;
+  .fotoDePerfil {
+    width: 45%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    box-shadow: 4px 4px 2px 1px rgba(0, 0, 0, 0.2);
+    .contactoIndFooter {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 10px;
+    }
+  }
+  .contactoLouderFooter {
+    background-color: $colorTerciario;
+    padding: 1% 1%;
+    border: white solid 1px;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+    img {
+      width: 2%;
+      height: auto;
+      margin-right: 5px;
+    }
+    a {
+      display: block;
+      color: $colorTexto;
+      text-decoration: none;
+    }
+  }
+  .Copyright {
+    font-size: x-small;
+    padding-top: 2%;
+  }
 }
 
 .presentacionesIndividuales {
@@ -210,31 +197,13 @@ footer {
   background-color: $colorSecundario;
   padding: 10px 5px;
   border: 1px solid black;
-}
-
-.presentacionesIndividuales img {
-  display: flex;
-  width: 50%;
-  height: auto;
-  padding-bottom: 10px;
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-}
-
-.soloDJ img {
-  display: flex;
-  width: 98%;
-  height: auto;
-  margin-bottom: 20px;
-  border-radius: 2rem;
-}
-
-.soloDJ p {
-  display: flex;
-  box-sizing: border-box;
-  margin-right: 10px;
-  padding-bottom: 10px;
-  text-align: justify;
-  color: $colorTexto;
+  img {
+    display: flex;
+    width: 50%;
+    height: auto;
+    padding-bottom: 10px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  }
 }
 
 .soloDJ {
@@ -246,18 +215,32 @@ footer {
   background-color: $colorTerciario;
   margin-left: 5px;
   border: black solid 1px;
+  p {
+    display: flex;
+    box-sizing: border-box;
+    margin-right: 10px;
+    padding-bottom: 10px;
+    text-align: justify;
+    color: $colorTexto;
+  }
+  img {
+    display: flex;
+    width: 98%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 2rem;
+  }
 }
 
 .djJuntos {
   display: flexbox;
   justify-items: center;
   color: $colorTexto;
-}
-
-.djJuntos img {
-  width: 90%;
-  display: block;
-  border-radius: 2rem;
+  img {
+    width: 90%;
+    display: block;
+    border-radius: 2rem;
+  }
 }
 
 div.card.cardCustom {
@@ -278,42 +261,39 @@ div.card.cardCustom {
   background-color: $colorTerciario;
   overflow-x: auto;
   scroll-behavior: smooth;
+  .fecha {
+    flex: none;
+    width: 250px;
+    height: 300px;
+    padding: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #425c6f;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    .dia {
+      margin-bottom: 20px;
+    }
+    .eventoDelDia {
+      width: 100%;
+      height: 100%;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 10px;
+      box-sizing: border-box;
+      background-color: #507087;
+      color: $colorTexto;
+    }
+  }
 }
 
 .calendarioBotones {
   display: flex;
   justify-content: space-between;
-}
-
-.fecha {
-  flex: none;
-  width: 250px;
-  height: 300px;
-  padding: 10px;
-  margin-right: 10px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  background-color: #425c6f;
-  border-radius: 5px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  color: white;
-}
-
-.dia {
-  margin-bottom: 20px;
-}
-
-.eventoDelDia {
-  width: 100%;
-  height: 100%;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  padding: 10px;
-  box-sizing: border-box;
-  background-color: #507087;
-  color: $colorTexto;
 }
 
 .formCustom {

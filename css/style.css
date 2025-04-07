@@ -22,19 +22,12 @@ header {
   padding-bottom: 15px;
   border: white 1px solid;
 }
-
-.contenedorFlex {
+header .contenedorFlex {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 }
-
-nav {
-  display: flex;
-  gap: 15px;
-}
-
-.logoPrincipal {
+header .logoPrincipal {
   display: inline-block;
   width: 10%;
   height: auto;
@@ -139,16 +132,20 @@ footer {
   padding-top: 10px;
   padding-left: 10px;
 }
-
-.fotoDePerfil {
+footer .fotoDePerfil {
   width: 45%;
   height: auto;
   border-radius: 50%;
   margin-bottom: 10px;
   box-shadow: 4px 4px 2px 1px rgba(0, 0, 0, 0.2);
 }
-
-.contactoLouderFooter {
+footer .fotoDePerfil .contactoIndFooter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+footer .contactoLouderFooter {
   background-color: #334756;
   padding: 1% 1%;
   border: white solid 1px;
@@ -157,27 +154,17 @@ footer {
   flex-direction: column;
   margin-right: 10px;
 }
-
-.contactoLouderFooter img {
+footer .contactoLouderFooter img {
   width: 2%;
   height: auto;
   margin-right: 5px;
 }
-
-.contactoIndFooter {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 10px;
-}
-
-.contactoLouderFooter a {
+footer .contactoLouderFooter a {
   display: block;
   color: whitesmoke;
   text-decoration: none;
 }
-
-.Copyright {
+footer .Copyright {
   font-size: x-small;
   padding-top: 2%;
 }
@@ -191,30 +178,12 @@ footer {
   padding: 10px 5px;
   border: 1px solid black;
 }
-
 .presentacionesIndividuales img {
   display: flex;
   width: 50%;
   height: auto;
   padding-bottom: 10px;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-}
-
-.soloDJ img {
-  display: flex;
-  width: 98%;
-  height: auto;
-  margin-bottom: 20px;
-  border-radius: 2rem;
-}
-
-.soloDJ p {
-  display: flex;
-  box-sizing: border-box;
-  margin-right: 10px;
-  padding-bottom: 10px;
-  text-align: justify;
-  color: whitesmoke;
 }
 
 .soloDJ {
@@ -227,13 +196,27 @@ footer {
   margin-left: 5px;
   border: black solid 1px;
 }
+.soloDJ p {
+  display: flex;
+  box-sizing: border-box;
+  margin-right: 10px;
+  padding-bottom: 10px;
+  text-align: justify;
+  color: whitesmoke;
+}
+.soloDJ img {
+  display: flex;
+  width: 98%;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 2rem;
+}
 
 .djJuntos {
   display: flexbox;
   justify-items: center;
   color: whitesmoke;
 }
-
 .djJuntos img {
   width: 90%;
   display: block;
@@ -259,13 +242,7 @@ div.card.cardCustom {
   overflow-x: auto;
   scroll-behavior: smooth;
 }
-
-.calendarioBotones {
-  display: flex;
-  justify-content: space-between;
-}
-
-.fecha {
+.calendario .fecha {
   flex: none;
   width: 250px;
   height: 300px;
@@ -280,12 +257,10 @@ div.card.cardCustom {
   justify-content: space-between;
   color: white;
 }
-
-.dia {
+.calendario .fecha .dia {
   margin-bottom: 20px;
 }
-
-.eventoDelDia {
+.calendario .fecha .eventoDelDia {
   width: 100%;
   height: 100%;
   border: 1px solid #ccc;
@@ -294,6 +269,11 @@ div.card.cardCustom {
   box-sizing: border-box;
   background-color: #507087;
   color: whitesmoke;
+}
+
+.calendarioBotones {
+  display: flex;
+  justify-content: space-between;
 }
 
 .formCustom {
