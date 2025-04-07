@@ -1,0 +1,10 @@
+@mixin sombreado($color) {
+  background-color: $color;
+  border-color: $color;
+}
+
+@mixin estiloBoton($color, $ancho, $alto) {
+  background-color: $color;
+  width: $ancho;
+  height: $alto;
+}

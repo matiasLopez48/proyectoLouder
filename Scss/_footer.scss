@@ -1,0 +1,44 @@
+footer {
+    justify-items: center;
+    align-items: normal;
+    background-color: $colorSecundario;
+    color: $colorTexto;
+    padding-top: 10px;
+    padding-left: 10px;
+    .fotoDePerfil {
+      width: 45%;
+      height: auto;
+      border-radius: 50%;
+      margin-bottom: 10px;
+      box-shadow: 4px 4px 2px 1px rgba(0, 0, 0, 0.2);
+      .contactoIndFooter {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+      }
+    }
+    .contactoLouderFooter {
+      background-color: $colorTerciario;
+      padding: 1% 1%;
+      border: white solid 1px;
+      border-radius: 1rem;
+      display: flex;
+      flex-direction: column;
+      margin-right: 10px;
+      img {
+        width: 2%;
+        height: auto;
+        margin-right: 5px;
+      }
+      a {
+        display: block;
+        color: $colorTexto;
+        text-decoration: none;
+      }
+    }
+    .Copyright {
+      font-size: x-small;
+      padding-top: 2%;
+    }
+  }

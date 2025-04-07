@@ -1,0 +1,53 @@
+.presentacionesIndividuales {
+  justify-content: center;
+  margin: 10px;
+  flex-wrap: wrap;
+  display: flex;
+  background-color: $colorSecundario;
+  padding: 10px 5px;
+  border: 1px solid black;
+  img {
+    display: flex;
+    width: 50%;
+    height: auto;
+    padding-bottom: 10px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.soloDJ {
+  flex: 1 1 300px;
+  box-sizing: border-box;
+  margin-bottom: 40px;
+  padding-left: 10px;
+  padding-top: 5px;
+  background-color: $colorTerciario;
+  margin-left: 5px;
+  border: black solid 1px;
+  p {
+    display: flex;
+    box-sizing: border-box;
+    margin-right: 10px;
+    padding-bottom: 10px;
+    text-align: justify;
+    color: $colorTexto;
+  }
+  img {
+    display: flex;
+    width: 98%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 2rem;
+  }
+}
+
+.djJuntos {
+  display: flexbox;
+  justify-items: center;
+  color: $colorTexto;
+  img {
+    width: 90%;
+    display: block;
+    border-radius: 2rem;
+  }
+}
