@@ -234,7 +234,7 @@ div.card.cardCustom {
   color: whitesmoke;
 }
 
-body, .customBg {
+.customBg {
   background-color: #082032;
   padding-top: 10px;
 }

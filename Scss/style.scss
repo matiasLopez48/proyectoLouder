@@ -21,13 +21,9 @@
   color: $colorTexto;
 }
 
-body {
+.customBg {
   background-color: $colorPrincipal;
   padding-top: 10px;
-}
-
-.customBg {
-  @extend body;
 }
 
 @media (max-width: 768px) {
