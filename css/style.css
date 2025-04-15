@@ -220,6 +220,15 @@ div.card.cardCustom {
   justify-content: space-between;
 }
 
+.formCustom {
+  color: whitesmoke;
+  margin: 1em 1em;
+  padding: 1em 1em;
+  background-color: #425c6f;
+  border-radius: 5px;
+  border: 1px solid white;
+}
+
 * {
   margin: 0;
   padding: 0;
