@@ -239,6 +239,10 @@ div.card.cardCustom {
   padding-top: 10px;
 }
 
+.card-title {
+  color: whitesmoke;
+}
+
 @media (max-width: 768px) {
   h1 {
     font-size: small;
