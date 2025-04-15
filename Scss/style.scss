@@ -6,6 +6,7 @@
 @import "presentaciones";
 @import "calendario";
 @import "form";
+@import "carrusel";
 
 * {
   margin: 0;
@@ -19,6 +20,7 @@
   width: 100%;
   padding-bottom: 1%;
   padding-left: 1%;
+  padding-top: 1%;
   color: $colorTexto;
 }
 
@@ -27,7 +29,7 @@
   padding-top: 10px;
 }
 
-.card-title{
+.card-title {
   color: $colorTexto;
 }
 
@@ -55,10 +57,16 @@
   .contactoLouderFooter {
     font-size: xx-small;
   }
-}
 
-.video-container {
-  height: 100%;
+  #carouselExampleCaptions {
+    display: block;
+  }
+
+  .video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .playlists {

@@ -73,7 +73,7 @@
       </div>
     </header>
     <h1 class="titulo">Eventos Recientes</h1>
-    <div id="carouselExampleCaptions" class="carousel slide">
+    <div id="carouselExampleCaptions" class="carousel slide d-block d-md-none">
       <div class="carousel-indicators">
         <button
           type="button"
@@ -107,6 +107,7 @@
               alt="Louder Mr Jones"
               autoplay
               muted
+              controls
             ></video>
           </div>
           <div class="carousel-caption d-none d-md-block">
@@ -123,6 +124,7 @@
               alt="Louder Palacio Alsina"
               autoplay
               muted
+              controls
             ></video>
           </div>
           <div class="carousel-caption d-none d-md-block">
@@ -139,6 +141,7 @@
               alt="Louder Palacio Alsina"
               autoplay
               muted
+              controls
             ></video>
           </div>
           <div class="carousel-caption d-none d-md-block">
@@ -164,6 +167,30 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
+    </div>
+    <!-- Pongo los videos aparte solamente para la vista de escritorio-->
+    <div class="video-grid d-none d-md-flex justify-content-center gap-3">
+      <video
+        src="./assets/eventoMrJones.mp4"
+        class="video-desktop"
+        autoplay
+        muted
+        controls
+      ></video>
+      <video
+        src="./assets/eventoPalacioAlsina.mp4"
+        class="video-desktop"
+        autoplay
+        muted
+        controls
+      ></video>
+      <video
+        src="./assets/eventoNebulosa.mp4"
+        class="video-desktop"
+        autoplay
+        muted
+        controls
+      ></video>
     </div>
 
     <section class="playlists">
