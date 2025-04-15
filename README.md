@@ -5,7 +5,9 @@
 
 - 🌱 I’m currently learning **web development**
 
-- 📫 How to reach me **matiaselt@gmail.com**
+- 📫 How to reach me **matiaselt@gmail.com** also **matiaslopeztelechea@gmail.com**
+
+- I study Computer Engineering at UNLam (Universidad Nacional de La Matanza) and I'm currently working as a Solution Engineer at ProContacto.
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">

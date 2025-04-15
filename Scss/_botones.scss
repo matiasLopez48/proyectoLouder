@@ -6,10 +6,9 @@
     border: white 1px solid;
     color: $colorTexto;
     @include estiloBoton($colorTerciario, 10em, 100%);
-  }
-  
-  .botonNavegador:hover {
-    @include sombreado(#6e6e6e);
+    &:hover {
+      @include sombreado(#6e6e6e);
+    }
   }
 
   .boton {
@@ -29,17 +28,15 @@
   .botonRosa {
     @extend .boton;
     @include estiloBoton(rgb(221, 42, 123), 98%, 2em);
-  }
-  
-  .botonRosa:hover {
-    @include sombreado(rgb(141, 27, 78));
+    &:hover {
+      @include sombreado(rgb(141, 27, 78));
+    }
   }
   
   .botonVerde {
     @extend .boton;
     @include estiloBoton(rgb(44, 152, 82), 98%, 2em);
-  }
-  
-  .botonVerde:hover {
-    @include sombreado(rgb(30, 108, 57));
+    &:hover {
+      @include sombreado(rgb(30, 108, 57));
+    }
   }
