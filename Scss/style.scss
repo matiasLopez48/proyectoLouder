@@ -34,6 +34,10 @@
   color: $colorTexto;
 }
 
+.navbar-toggler{
+  border-color: white;
+}
+
 @media (max-width: 768px) {
   h1 {
     font-size: small;
