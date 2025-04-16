@@ -139,6 +139,7 @@ footer .Copyright {
   background-color: #334756;
   margin-left: 5px;
   border: black solid 1px;
+  animation: fadeIn 1s ease-in-out;
 }
 .soloDJ p {
   display: flex;
@@ -166,6 +167,11 @@ footer .Copyright {
   display: block;
   border-radius: 2rem;
 }
+.djJuntos p {
+  padding-right: 20px;
+  padding-left: 20px;
+  font-size: larger;
+}
 
 div.card.cardCustom {
   width: 17rem;
@@ -185,6 +191,7 @@ div.card.cardCustom {
   background-color: #334756;
   overflow-x: auto;
   scroll-behavior: smooth;
+  animation: fadeIn 0.5s ease-in-out;
 }
 .calendario .fecha {
   flex: none;
@@ -227,6 +234,7 @@ div.card.cardCustom {
   background-color: #425c6f;
   border-radius: 5px;
   border: 1px solid white;
+  animation: fadeIn 0.5s ease-in-out;
 }
 
 .video-desktop {
@@ -241,6 +249,16 @@ div.card.cardCustom {
   flex-wrap: wrap;
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 * {
   margin: 0;
   padding: 0;

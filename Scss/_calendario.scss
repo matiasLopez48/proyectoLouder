@@ -16,6 +16,7 @@ div.card.cardCustom {
     background-color: $colorTerciario;
     overflow-x: auto;
     scroll-behavior: smooth;
+    animation: fadeIn 0.5s ease-in-out;
     .fecha {
       flex: none;
       width: 250px;
